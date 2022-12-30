@@ -11,7 +11,7 @@ const NavMob = () => {
     })
 
     return (
-        <nav className={`${bg ? '' : 'bg-dark'} flex flex-col content-center list-none h-screen text-white transition-all duration-300`}>
+        <nav className={`${bg ? 'bg-white text-black' : 'bg-dark'} flex flex-col content-center list-none h-screen text-white transition-all duration-300`}>
             <div className='border-b-2 border-primary  cursor-pointer'>
                 {
                     navLinks.map(({ name, path, icon }, index) => {

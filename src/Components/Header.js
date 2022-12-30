@@ -9,7 +9,7 @@ import LogoColor from "../assets/Images/Logo-color.svg"
 const Header = () => {
     const [bg, setBg] = useState(false);
     const [logo, setLogo] = useState(LogoWhite);
-    const [toggle, setToggle] = useState(false);
+    const [open, setOpen] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -40,10 +40,10 @@ const Header = () => {
                             </button>
                         </div>
                         <div className='ml-4'>
-                            <svg className="lg:hidden h-8 cursor-pointer" onClick={() => setToggle()} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <svg className={`${open ? "hidden" : "active"} lg:hidden h-8 cursor-pointer`} onClick={() => setOpen(true)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                             </svg>
-                            <svg className="hidden h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <svg className={`${open ? "active" : "hidden"} hover:rotate-180 transition duration-300 lg:hidden h-8 cursor-pointer`} onClick={() => setOpen(false)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </div>
@@ -52,9 +52,9 @@ const Header = () => {
             </div>
 
             {/* Navbar Mobile */}
-            <div className='lg:hidden bg-dark h-sceen'>
+            <div className={`${open ? "left-[-1000px]" : "right-[1000px]"} lg:hidden bg-dark h-sceen transition-all duration-300`}>
                 <div className='space-y-1  '>
-                    <NavMob />
+                    {open && <NavMob />}
                 </div>
             </div>
         </nav >
