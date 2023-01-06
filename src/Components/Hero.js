@@ -12,7 +12,7 @@ const Hero = () => {
                             <Typed
                                 strings={[
                                     'Graphic Designer',
-                                    'Web Developer',
+                                    'Web Developer l',
                                 ]}
                                 typeSpeed={60}
                                 backSpeed={60}
