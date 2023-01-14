@@ -8,7 +8,7 @@ const Hero = () => {
                 <div className="flex flex-col items-center justify-center text-center h-full gap-10 my-[120px]">
                     <div className="">
                         <h6 className=" text-white opacity-60 font-medium text-2xl max-md:text-lg">
-                            Hello, I'm Dev Kumar
+                            Hello, I'm Dev Kumarr
                         </h6>
                         <div className="text-6xl max-md:text-4xl p-2 font-bold mb-2">
                             {/* <Typed className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'
