@@ -26,14 +26,14 @@ const Hero = () => {
                                 UI/UX Developer
                             </h1>
                         </div>
-                        <p className="text-white mb-5 max-w-4xl max-md:text-sm">
+                        <p className="text-white mb-5 max-w-4xl max-md:text-sm ">
                             Welcome to my portfolio, showcasing my skills in both graphic
                             design and web development. From branding to website design, I
                             have a passion for creating visually appealing and functional
                             projects for my clients.
                         </p>
                         <button className="button-primary">
-                            Click me
+                            Resume
                         </button>
                     </div>
                     <div className="hero-img-container">

@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <nav
-            className={`${bg ? "bg-white" : "bg-dark text-white"
+            className={`${bg ? "bg-white" : "bg-primarydark text-white"
                 } w-full fixed top-0 z-10 transition-all duration-300`}
         >
             <div className="container">
@@ -42,10 +42,6 @@ const Header = () => {
                     </div>
                     <div className="flex ml-auto">
                         <div className="flex items-center">
-                            <div className="mr-5 cursor-pointer">
-                                <i class="fa-regular fa-sun-bright"></i>
-                                <i class="fa-solid fa-moon"></i>
-                            </div>
                             <button className="button-primary">
                                 <a href="/">Resume</a>
                             </button>
@@ -93,7 +89,7 @@ const Header = () => {
             {/* Navbar Mobile */}
             <div
                 className={`${open
-                    ? "fixed top-20 left-0 lg:hidden bg-dark h-sceen w-screen border-t border-purple-800 transition-all duration-300"
+                    ? "fixed top-20 left-0 lg:hidden bg-primary500 h-sceen w-screen border-t border-primary400 transition-all duration-300"
                     : "fixed left-[-100%]"
                     } `}
             >
