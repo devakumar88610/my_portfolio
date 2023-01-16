@@ -28,7 +28,7 @@ const Header = () => {
             className={`${bg ? "bg-white" : "bg-dark text-white"
                 } w-full fixed top-0 z-10 transition-all duration-300`}
         >
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="container">
                 <div className="relative flex h-20 items-center">
                     <a href="/" className="cursor-pointer">
                         <img
@@ -46,7 +46,7 @@ const Header = () => {
                                 <i class="fa-regular fa-sun-bright"></i>
                                 <i class="fa-solid fa-moon"></i>
                             </div>
-                            <button className="bg-primary text-white rounded-full px-5 py-1 border-2 border-primary hover:bg-white hover:text-black transition-all duration-300">
+                            <button className="button-primary">
                                 <a href="/">Resume</a>
                             </button>
                         </div>
