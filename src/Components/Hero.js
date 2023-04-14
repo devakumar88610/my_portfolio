@@ -14,7 +14,7 @@ const Hero = () => {
                         {/* Hero Contents */}
                         <div className="flex-1 lg:text-left">
                             <h6 className=' text-white/50 font-medium text-lglg:text-2xl'>
-                                Hello, I'm Dev Kumar
+                                Hello, I'm Dev Kumarrrrrr
                             </h6>
                             <div className='text-gradient'>
                                 <TypedText />
