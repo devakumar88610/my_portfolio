@@ -18,27 +18,18 @@ body {
         @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
     }
 
-    .hero-container{
-        @apply flex flex-col items-center justify-center text-center h-full gap-10 my-[110px]
-    }
-
-    .hero-img-container{
-        @apply bg-white h-[250px] w-[250px] rounded-full overflow-hidden bg-gradient-to-r 
-        from-primary to-secondary p-2
-    }
-
     .form-control{
         @apply w-full text-white bg-transparent border-2 border-primary transition-all 
         duration-300 px-4 py-2 rounded-full focus:outline-secondary
     }
 
     .button-primary{
-        @apply bg-primary text-white rounded-full px-5 py-[6px] hover:bg-white 
+        @apply bg-primary text-white rounded-full px-8 py-[6px] hover:bg-white 
         hover:text-black transition-all duration-300
     }
 
     .text-gradient{
-        @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary
+        @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary 
     }
 
     .icon-primary{
