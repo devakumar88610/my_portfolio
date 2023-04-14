@@ -22,7 +22,7 @@ const Header = () => {
                     <div className="flex items-center ml-auto">
                         <div className="flex items-center">
                             <button className="button-primary">
-                                <a href="/">Resume</a>
+                                <a href="/">Contact</a>
                             </button>
                         </div>
                     </div>

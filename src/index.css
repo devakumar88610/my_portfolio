@@ -24,8 +24,13 @@ body {
     }
 
     .button-primary{
-        @apply bg-primary text-white rounded-full px-8 py-[6px] hover:bg-white 
-        hover:text-black transition-all duration-300
+        @apply bg-primary text-white rounded-full px-6 py-[6px] hover:bg-white 
+        hover:text-black transition-all duration-500
+    }
+
+    .button-secondary{
+        @apply border border-white text-white rounded-full px-6 py-[6px] hover:bg-white 
+        hover:text-black transition-all duration-500
     }
 
     .text-gradient{

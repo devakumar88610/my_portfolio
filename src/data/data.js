@@ -31,4 +31,29 @@ const socialIcons = [
     },
 ];
 
-export { navLinks, socialIcons }
+// slick slider images
+
+const slickImages = [
+    {
+        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+        alt: "Image 1",
+    },
+    {
+        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+        alt: "Image 2",
+    },
+    {
+        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+        alt: "Image 3",
+    },
+    {
+        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+        alt: "Image 3",
+    },
+    {
+        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+        alt: "Image 3",
+    },
+];
+
+export { navLinks, socialIcons, slickImages }

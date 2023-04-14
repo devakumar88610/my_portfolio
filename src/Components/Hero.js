@@ -1,6 +1,7 @@
 import React from "react";
 import myAvatar from "../assets/Images/my-avatar.jpeg";
 import { socialIcons } from '../data/data'
+import { AiOutlineDownload } from 'react-icons/ai'
 import TypedText from "./TypedText";
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
                         {/* Hero Contents */}
                         <div className="flex-1 lg:text-left">
                             <h6 className=' text-white/50 font-medium text-lglg:text-2xl'>
-                                Hello, I'm Dev Kumarrrrrr
+                                Hello, I'm Dev Kumar
                             </h6>
                             <div className='text-gradient'>
                                 <TypedText />
@@ -25,9 +26,11 @@ const Hero = () => {
                                 have a passion for creating visually appealing and functional
                                 projects for my clients.
                             </p>
-                            <div className="flex justify-center gap-4 lg:justify-start">
-                                <button className='button-primary'>Resume</button>
-                                <button className='button-primary'>Resume</button>
+                            <div className="flex justify-center gap-4 lg:justify-start my-0 lg:my-10">
+                                <button className='button-primary'>Hire Me</button>
+                                <button className='button-secondary flex items-center gap-2'>Resume
+                                    <AiOutlineDownload className="w-5 h-5 animate-bounce" />
+                                </button>
                             </div>
 
                             {/* Social Media Icons */}
