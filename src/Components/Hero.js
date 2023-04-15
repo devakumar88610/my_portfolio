@@ -7,7 +7,7 @@ import TypedText from "./TypedText";
 const Hero = () => {
     return (
         <div>
-            <div className='container' id="contact">
+            <div className='container' id="home">
                 <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full gap-10 my-6'>
                     <div className='absolute top-[-50%] -z-10 w-[50%] h-[50%] rounded-full blur-[300px] bg-primary'></div>
                     <div className="flex flex-col lg:flex-row justify-between items-center gap-6 ">
