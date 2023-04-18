@@ -13,7 +13,7 @@ function App() {
       <Hero />
 
       <NavMob />
-      <Contact />-
+      <Contact />
       <Footer />
     </BrowserRouter>
     // <div className='bg-dark'>

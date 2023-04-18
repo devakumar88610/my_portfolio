@@ -10,7 +10,7 @@ const Header = () => {
 
 
     return (
-        <nav
+        <nav id="/"
             className="w-full border-b border-primary300">
             <div className="container">
                 <div className=" flex h-20 items-center justify-between select-none">
@@ -27,7 +27,7 @@ const Header = () => {
                     <div className="flex items-center ml-auto">
                         <div className="flex items-center">
                             <button className="button-primary">
-                                <a href="/">Contact</a>
+                                <a href="tel:919900760225">Contact</a>
                             </button>
                         </div>
                     </div>

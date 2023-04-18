@@ -17,22 +17,22 @@ const Contact = () => {
         let newErrors = {};
 
         // fullname validation
-        if (formData.fullname === 0) {
+        if (formData.fullname == 0) {
             newErrors.fullname = 'Please enter your fullname';
         } else if (!formData.fullname.match(/^[A-Z a-z]*$/)) {
             newErrors.fullname = 'Name must be alphabets'
         }
 
         // email validation
-        if (formData.email === 0) {
+        if (formData.email == 0) {
             newErrors.email = 'Please enter your email';
         } else if (!formData.email.match(/^[A-Za-z._\-[0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/)) {
             newErrors.email = 'Enter valid email';
         }
 
         // message validation
-        if (formData.message.length === 0) {
-            newErrors.message = 'Write your queries';
+        if (formData.message.length == 0) {
+            newErrors.message = 'Write message';
         }
 
         setErrors(newErrors);
@@ -54,8 +54,15 @@ const Contact = () => {
     return (
         <section id="contact" className="bg-primary500 py-5 lg:py-10 border-y border-primary300">
             <div className="container">
-                <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8 select-none">
+
+
+
+                <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8">
                     <form onSubmit={handleSubmit} className="text-white">
+                        {/* <div className="mb-5">
+                            <h1 className="font-medium text-2xl text-white mb-1">Contact me</h1>
+                            <div className="w-10 h-[2px] bg-secondary rounded-full" />
+                        </div> */}
                         {/* {JSON.stringify(formData)} */}
                         <div className="mb-6">
                             <input
@@ -121,24 +128,8 @@ const Contact = () => {
                             loading='lazy'
                             referrerpolicy='no-referrer-when-downgrade'
                         ></iFrame>
-
                     </div>
-
                 </div>
-                {/* <div className="flex justify-center items-center my-5">
-                    <a href="/" className="flex items-center text-white mx-4">
-                        <i class="fa-solid fa-envelope icon-primary"></i>
-                        <p className="hidden hover:flex">devakumar88610</p>
-                    </a>
-                    <a href="/" className="flex items-center text-white mx-4">
-                        <i class="fa-solid fa-phone icon-primary"></i>
-                        <p className="hidden">+91 99007 60225</p>
-                    </a>
-                    <a href="/" className="flex items-center text-white mx-4">
-                        <i class="fa-solid fa-location-pin icon-primary"></i>
-                        <p className="hidden">Bangalore, Karnataka</p>
-                    </a>
-                </div> */}
             </div>
         </section>
     );
