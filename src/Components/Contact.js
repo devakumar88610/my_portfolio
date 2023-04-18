@@ -17,21 +17,21 @@ const Contact = () => {
         let newErrors = {};
 
         // fullname validation
-        if (formData.fullname == 0) {
+        if (formData.fullname === 0) {
             newErrors.fullname = 'Please enter your fullname';
-        } else if (!formData.fullname.match(/^[A-Za-z]*$/)) {
+        } else if (!formData.fullname.match(/^[A-Z a-z]*$/)) {
             newErrors.fullname = 'Name must be alphabets'
         }
 
         // email validation
-        if (formData.email == 0) {
+        if (formData.email === 0) {
             newErrors.email = 'Please enter your email';
-        } else if (!formData.email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        } else if (!formData.email.match(/^[A-Za-z._\-[0-9]*[@][A-Za-z]*[.][a-z]{2,4}$/)) {
             newErrors.email = 'Enter valid email';
         }
 
         // message validation
-        if (formData.message.length == 0) {
+        if (formData.message.length === 0) {
             newErrors.message = 'Write your queries';
         }
 

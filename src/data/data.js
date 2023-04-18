@@ -6,7 +6,7 @@ import { HiOutlineSquare2Stack } from "react-icons/hi2"
 import { AiFillInstagram, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 
 const navLinks = [
-    { name: 'home', path: "#home", icon: BiHomeCircle },
+    { name: 'Home', path: "#home", icon: BiHomeCircle },
     { name: 'Skills', path: "#skills", icon: RxGear },
     { name: 'About', path: "#about", icon: AiOutlineExclamationCircle },
     { name: 'Portfolio', path: "#portfolio", icon: HiOutlineSquare2Stack },
