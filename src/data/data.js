@@ -17,11 +17,11 @@ const navLinks = [
 
 const socialIcons = [
     {
-        link: "https://github.com/devakumar88610",
+        link: "https://www.instagram.com/dev_kumar_developer/",
         icon: AiFillInstagram
     },
     {
-        link: "https://github.com/devakumar88610",
+        link: "https://www.linkedin.com/in/deva-kumar-939577240/",
         icon: AiFillLinkedin
     },
 

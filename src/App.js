@@ -4,6 +4,7 @@ import Header from './Navbar/Header';
 import Hero from './Components/Hero';
 import NavMob from './Navbar/NavMob'
 import { BrowserRouter } from "react-router-dom"
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
       <NavMob />
       <Contact />-
+      <Footer />
     </BrowserRouter>
     // <div className='bg-dark'>
     //   <Header />

@@ -32,8 +32,9 @@ const Contact = () => {
 
         // message validation
         if (formData.message.length == 0) {
-            newErrors.message = 'Write your query';
+            newErrors.message = 'Write your queries';
         }
+
         setErrors(newErrors);
         return Object.values(newErrors).length === 0;
     };
@@ -51,7 +52,7 @@ const Contact = () => {
         }
     };
     return (
-        <section id="contact">
+        <section id="contact" className="bg-primary500 py-5 lg:py-10 border-y border-primary300">
             <div className="container">
                 <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8 select-none">
                     <form onSubmit={handleSubmit} className="text-white">
@@ -111,32 +112,33 @@ const Contact = () => {
                     </form>
 
                     <div>
+
                         <iFrame
                             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.7618137500453!2d77.65094110412194!3d13.032662789634372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17348fe7416b%3A0x1a6c4867314e02db!2sSt.Vincent%20Pallotti%20School!5e0!3m2!1sen!2sin!4v1666607925529!5m2!1sen!2sin'
-                            width='100%'
-                            height='80%'
                             Style='border:0;'
-                            className='rounded-2xl'
+                            className='rounded-2xl h-[300px] lg:h-full w-full '
                             allowfullscreen=''
                             loading='lazy'
                             referrerpolicy='no-referrer-when-downgrade'
                         ></iFrame>
-                        <div className="flex justify-center items-center my-5">
-                            <a href="/" className="flex items-center text-white mx-4">
-                                <i class="fa-solid fa-envelope icon-primary"></i>
-                                <p className="hidden hover:visible">devakumar88610</p>
-                            </a>
-                            <a href="/" className="flex items-center text-white mx-4">
-                                <i class="fa-solid fa-phone icon-primary"></i>
-                                <p className="hidden">+91 99007 60225</p>
-                            </a>
-                            <a href="/" className="flex items-center text-white mx-4">
-                                <i class="fa-solid fa-location-pin icon-primary"></i>
-                                <p className="hidden">Bangalore, Karnataka</p>
-                            </a>
-                        </div>
+
                     </div>
+
                 </div>
+                {/* <div className="flex justify-center items-center my-5">
+                    <a href="/" className="flex items-center text-white mx-4">
+                        <i class="fa-solid fa-envelope icon-primary"></i>
+                        <p className="hidden hover:flex">devakumar88610</p>
+                    </a>
+                    <a href="/" className="flex items-center text-white mx-4">
+                        <i class="fa-solid fa-phone icon-primary"></i>
+                        <p className="hidden">+91 99007 60225</p>
+                    </a>
+                    <a href="/" className="flex items-center text-white mx-4">
+                        <i class="fa-solid fa-location-pin icon-primary"></i>
+                        <p className="hidden">Bangalore, Karnataka</p>
+                    </a>
+                </div> */}
             </div>
         </section>
     );

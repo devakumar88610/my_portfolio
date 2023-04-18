@@ -11,14 +11,14 @@ const Hero = () => {
             <div className='container' id="home">
                 <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full gap-10 py-6'>
                     <div className='absolute top-[-50%] -z-10 w-[50%] h-[50%] rounded-full blur-[300px] bg-primary' />
-                    <div className="flex flex-col lg:flex-row justify-between items-center gap-6 select-none">
+                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8 select-none">
 
                         {/* Hero Contents */}
                         <motion.div className="flex-1 lg:text-left"
                             initial={{ x: '-100vw', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{
-                                type: 'spring', duration: 1, bounce: 0.2,
+                                type: 'spring', duration: 0.5, bounce: 0.2,
                             }}>
                             <h6 className=' text-white/50 font-medium text-lglg:text-2xl'>
                                 Hello, I'm Dev Kumar
@@ -44,7 +44,7 @@ const Hero = () => {
                                 {
                                     socialIcons.map(({ link, icon: Icon }, index) => {
                                         return <div key={index} className="">
-                                            <a href={link}><Icon className="text-white/50 hover:text-white h-6 w-6 transition-all duration-500" /></a>
+                                            <a href={link} target="_blank"><Icon className="text-white/50 hover:text-white h-6 w-6 transition-all duration-500" /></a>
                                         </div>
                                     })
                                 }
@@ -56,7 +56,7 @@ const Hero = () => {
                             initial={{ x: '100vw' }}
                             animate={{ x: 0 }}
                             transition={{
-                                type: 'spring', delay: 0.5, duration: 1, bounce: 0.2
+                                type: 'spring', delay: 0.5, duration: 0.5, bounce: 0.2
                             }}>
                             <div>
                                 <img className="w-[250px] h-[250px] lg:h-full lg:w-full hover:scale-110 transition-all duration-500" src={myAvatar} alt="my-avatar" />
