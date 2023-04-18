@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 
 const NavMob = () => {
     return (
-        <nav className='bg-primary500/50 fixed bottom-0 left-0 w-full backdrop-blur-md  z-50 lg:hidden'>
+        <nav className='bg-primary500/50 fixed bottom-0 border-t border-primary300 left-0 w-full backdrop-blur-md  z-50 lg:hidden'>
             <div className=' flex items-center justify-center h-[60px]'>
                 {
                     navLinks.map(({ path, icon: Icons }, index) => {

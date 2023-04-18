@@ -53,7 +53,7 @@ const Contact = () => {
     return (
         <section id="contact">
             <div className="container">
-                <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8">
+                <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8 select-none">
                     <form onSubmit={handleSubmit} className="text-white">
                         {/* {JSON.stringify(formData)} */}
                         <div className="mb-6">

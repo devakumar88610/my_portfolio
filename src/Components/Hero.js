@@ -3,17 +3,23 @@ import myAvatar from "../assets/Images/my-avatar.jpeg";
 import { socialIcons } from '../data/data'
 import { AiOutlineDownload } from 'react-icons/ai'
 import TypedText from "./TypedText";
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
         <div>
             <div className='container' id="home">
                 <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full gap-10 py-6'>
-                    <div className='absolute top-[-50%] -z-10 w-[50%] h-[50%] rounded-full blur-[300px] bg-primary'></div>
-                    <div className="flex flex-col lg:flex-row justify-between items-center gap-6 ">
+                    <div className='absolute top-[-50%] -z-10 w-[50%] h-[50%] rounded-full blur-[300px] bg-primary' />
+                    <div className="flex flex-col lg:flex-row justify-between items-center gap-6 select-none">
 
                         {/* Hero Contents */}
-                        <div className="flex-1 lg:text-left">
+                        <motion.div className="flex-1 lg:text-left"
+                            initial={{ x: '-100vw', opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{
+                                type: 'spring', duration: 1, bounce: 0.2,
+                            }}>
                             <h6 className=' text-white/50 font-medium text-lglg:text-2xl'>
                                 Hello, I'm Dev Kumar
                             </h6>
@@ -43,14 +49,19 @@ const Hero = () => {
                                     })
                                 }
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Hero Image */}
-                        <div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-2xl">
+                        <motion.div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-2xl"
+                            initial={{ x: '100vw' }}
+                            animate={{ x: 0 }}
+                            transition={{
+                                type: 'spring', delay: 0.5, duration: 1, bounce: 0.2
+                            }}>
                             <div>
-                                <img className="w-[250px] h-[250px] lg:h-full lg:w-full  hover:scale-110 transition-all duration-500" src={myAvatar} alt="my-avatar" />
+                                <img className="w-[250px] h-[250px] lg:h-full lg:w-full hover:scale-110 transition-all duration-500" src={myAvatar} alt="my-avatar" />
                             </div>
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>

@@ -13,10 +13,10 @@ const Header = () => {
         <nav
             className="w-full border-b border-primary300">
             <div className="container">
-                <div className=" flex h-20 items-center justify-between">
+                <div className=" flex h-20 items-center justify-between select-none">
                     <a href="/" className="cursor-pointer">
                         <img
-                            className="h-8 hover:opacity-80 transition-opacity duration-300 "
+                            className="none h-8 hover:opacity-80 transition-opacity duration-300 "
                             src={Logo}
                             alt="Dev Kumar"
                         />
