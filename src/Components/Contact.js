@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -52,7 +53,7 @@ const Contact = () => {
         }
     };
     return (
-        <section id="contact" className="bg-primary500 py-5 lg:py-10 border-y border-primary300">
+        <section id="contact" className="bg-primary/10 dark:bg-primary500 py-5 lg:py-10 ">
             <div className="container">
 
 
@@ -92,7 +93,7 @@ const Contact = () => {
                         </div>
                         <div className="mb-4">
                             <textarea
-                                className="form-control rounded-2xl"
+                                className="form-control rounded-xl"
                                 type="text"
                                 name="message"
                                 rows="4"
@@ -118,16 +119,15 @@ const Contact = () => {
                         </button>
                     </form>
 
-                    <div>
+                    <div className="shadow-lg">
 
                         <iFrame
                             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.7618137500453!2d77.65094110412194!3d13.032662789634372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17348fe7416b%3A0x1a6c4867314e02db!2sSt.Vincent%20Pallotti%20School!5e0!3m2!1sen!2sin!4v1666607925529!5m2!1sen!2sin'
-                            Style='border:0;'
-                            className='rounded-2xl h-[300px] lg:h-full w-full '
-                            allowfullscreen=''
+                            className='rounded-xl h-[300px] lg:h-full w-full border-none'
+                            allowFullScreen=''
                             loading='lazy'
-                            referrerpolicy='no-referrer-when-downgrade'
-                        ></iFrame>
+                            referrerPolicy='no-referrer-when-downgrade'
+                        />
                     </div>
                 </div>
             </div>

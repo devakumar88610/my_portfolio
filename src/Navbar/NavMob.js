@@ -1,23 +1,40 @@
 import React from 'react'
 import { navLinks } from '../data/data'
 import { HashLink as Link } from 'react-router-hash-link'
+import { AiFillLeftCircle } from 'react-icons/ai'
+import Logo from "../assets/Images/Logo-white.svg"
+import Logo2 from "../assets/Images/Logo-color.svg"
 
-const NavMob = () => {
+const NavMob = ({ open, onClose, darkmode }) => {
     return (
-        <nav className='bg-primary500/50 fixed bottom-0 border-t border-primary300 left-0 w-full backdrop-blur-md  z-50 lg:hidden'>
-            <div className=' flex items-center justify-center h-[60px]'>
+        <nav className={`fixed left-0 top-0 flex flex-col h-screen w-[60%] md:w-[30%] z-[2000] shadow-lg transition-all bg-primarylight dark:bg-primarydark 
+        dark:text-white after:bg-slate-50 lg:hidden
+        ${open ? "translate-x-0" : "-translate-x-96"
+            }`} >
+            <div className='flex items-center h-20 px-6'>
+                <a href="/" className="cursor-pointer">
+                    <img
+                        className="none h-8 hover:opacity-80 transition-opacity duration-300 "
+                        src={darkmode ? Logo : Logo2}
+                        alt="Dev Kumar"
+                    />
+                </a>
+            </div>
+            <div className='px-4 md:px-6'>
                 {
-                    navLinks.map(({ path, icon: Icons }, index) => {
+                    navLinks.map(({ path, name, icon }, index) => {
                         return <Link smooth key={index} to={path} className='mx-auto'>
-                            <div className='flex items-center justify-center text-white hover:bg-white hover:text-primary rounded-full p-2 transition-all duration-500'>
-                                <Icons className='w-6 h-6' activeClassName="bg-white text-primary" />
-
+                            <div className='flex items-center gap-5 py-5'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path d={icon} />
+                                </svg>
+                                <p>{name}</p>
                             </div>
                         </Link>
                     })
                 }
             </div>
-
+            <AiFillLeftCircle onClick={onClose} className='absolute -right-3.5 text-primary top-7 w-7 h-7 cursor-pointer' />
         </nav>
     )
 }

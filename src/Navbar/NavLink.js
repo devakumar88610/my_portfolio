@@ -12,7 +12,7 @@ const NavLink = () => {
                 {
                     navLinks.map(({ name, path }, index) => {
                         return <li key={index}>
-                            <Link smooth onClick={() => setActive(index)} className='text-white hover:text-primary transition-all duration-300' to={path}>{name}</Link>
+                            <Link smooth onClick={() => setActive(index)} className='text-black hover:text-primary dark:text-white dark:hover:text-primary transition-all duration-300' to={path}>{name}</Link>
                         </li>
                     })
                 }

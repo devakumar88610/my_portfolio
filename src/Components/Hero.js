@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
-        <div>
+        <div className=" bg-primarylight dark:bg-primarydark pt-20 lg:pt-10">
             <div className='container' id="home">
-                <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full gap-10 py-6'>
-                    <div className='absolute top-[-50%] -z-10 w-[50%] h-[50%] rounded-full blur-[300px] bg-primary' />
-                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8 select-none">
+                <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full lg:h-screen gap-10 py-6 '>
+                    <div className='absolute top-[-50%] -left-[30%] w-[50%] h-[50%] rounded-full blur-[450px] bg-primary' />
+                    <div className='absolute top-[-50%] -right-[30%] w-[50%] h-[50%] rounded-full blur-[450px] bg-secondary/80' />
+                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
 
                         {/* Hero Contents */}
                         <motion.div className="flex-1 lg:text-left"
@@ -20,13 +21,13 @@ const Hero = () => {
                             transition={{
                                 type: 'spring', duration: 0.5, bounce: 0.2,
                             }}>
-                            <h6 className=' text-white/50 font-medium text-lglg:text-2xl'>
+                            <h6 className='text-slate-400 dark:text-white/50 font-medium text-lglg:text-2xl'>
                                 Hello, I'm Dev Kumar
                             </h6>
                             <div className='text-gradient'>
                                 <TypedText />
                             </div>
-                            <p className='text-white mb-5 max-w-4xl text-sm lg:text-base '>
+                            <p className='text-slate-800 dark:text-white mb-5 max-w-4xl text-sm lg:text-base '>
                                 Welcome to my portfolio, showcasing my skills in both graphic
                                 design and web development. From branding to website design, I
                                 have a passion for creating visually appealing and functional
@@ -44,7 +45,7 @@ const Hero = () => {
                                 {
                                     socialIcons.map(({ link, icon: Icon }, index) => {
                                         return <div key={index} className="">
-                                            <a href={link} target="_blank"><Icon className="text-white/50 hover:text-white h-6 w-6 transition-all duration-500" /></a>
+                                            <a href={link} target="_blank"><Icon className="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white h-7 w-7 transition-all duration-500" /></a>
                                         </div>
                                     })
                                 }

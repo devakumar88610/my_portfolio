@@ -1,21 +1,20 @@
-
 import Contact from './Components/Contact';
 import Header from './Navbar/Header';
 import Hero from './Components/Hero';
-import NavMob from './Navbar/NavMob'
 import { BrowserRouter } from "react-router-dom"
 import Footer from './Components/Footer';
 
+
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Hero />
-
-      <NavMob />
-      <Contact />
-      <Footer />
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Header />
+        <Hero />
+        <Contact />
+        <Footer />
+      </BrowserRouter>
+    </div>
     // <div className='bg-dark'>
     //   <Header />
     //   <Hero />
