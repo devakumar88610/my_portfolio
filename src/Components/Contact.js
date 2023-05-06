@@ -55,9 +55,6 @@ const Contact = () => {
     return (
         <section id="contact" className="bg-primary/10 dark:bg-primary500 py-5 lg:py-10 ">
             <div className="container">
-
-
-
                 <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8">
                     <form onSubmit={handleSubmit} className="text-white">
                         {/* <div className="mb-5">

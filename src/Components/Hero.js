@@ -1,17 +1,17 @@
 import React from "react";
 import myAvatar from "../assets/Images/my-avatar.jpeg";
 import { socialIcons } from '../data/data'
-import { AiOutlineDownload } from 'react-icons/ai'
+import { FiDownload } from 'react-icons/fi'
 import TypedText from "./TypedText";
 import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
-        <div className=" bg-primarylight dark:bg-primarydark pt-20 lg:pt-10">
-            <div className='container' id="home">
-                <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full lg:h-screen gap-10 py-6 '>
-                    <div className='absolute top-[-50%] -left-[30%] w-[50%] h-[50%] rounded-full blur-[450px] bg-primary' />
-                    <div className='absolute top-[-50%] -right-[30%] w-[50%] h-[50%] rounded-full blur-[450px] bg-secondary/80' />
+        <div className=" bg-primarylight dark:bg-primarydark pt-20 lg:pt-10 overflow-hidden">
+            <div className='absolute top-0 left-0 w-[30%] h-[30%] rounded-full blur-[300px] bg-primary' />
+            <div className='absolute top-0 right-0 w-[30%] h-[30%] rounded-full blur-[300px] bg-secondary/80' />
+            <div className='container' id="/">
+                <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full lg:h-screen gap-10 py-6'>
                     <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
 
                         {/* Hero Contents */}
@@ -19,9 +19,9 @@ const Hero = () => {
                             initial={{ x: '-100vw', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{
-                                type: 'spring', duration: 0.5, bounce: 0.2,
+                                type: 'spring', duration: 1, bounce: 0.2,
                             }}>
-                            <h6 className='text-slate-400 dark:text-white/50 font-medium text-lglg:text-2xl'>
+                            <h6 className='text-slate-800/50 dark:text-white/50 font-medium text-lg lg:text-2xl'>
                                 Hello, I'm Dev Kumar
                             </h6>
                             <div className='text-gradient'>
@@ -35,8 +35,10 @@ const Hero = () => {
                             </p>
                             <div className="flex justify-center gap-4 lg:justify-start my-0 lg:my-10">
                                 <button className='button-primary'>Hire Me</button>
-                                <button className='button-secondary flex items-center gap-2'>Resume
-                                    <AiOutlineDownload className="w-5 h-5 animate-bounce" />
+                                <button className='button-secondary p-0 pl-4 flex items-center gap-2'>Resume
+                                    <div className="bg-primarylight hover:opacity-60 transition-all duration-300 text-slate-800 w-10 h-10 rounded-full flex justify-center items-center">
+                                        <FiDownload className="w-5 h-5 animate-bounce" />
+                                    </div>
                                 </button>
                             </div>
 
@@ -57,7 +59,7 @@ const Hero = () => {
                             initial={{ x: '100vw' }}
                             animate={{ x: 0 }}
                             transition={{
-                                type: 'spring', delay: 0.5, duration: 0.5, bounce: 0.2
+                                type: 'spring', delay: 0.5, duration: 1, bounce: 0.2
                             }}>
                             <div>
                                 <img className="w-[250px] h-[250px] lg:h-full lg:w-full hover:scale-110 transition-all duration-500" src={myAvatar} alt="my-avatar" />

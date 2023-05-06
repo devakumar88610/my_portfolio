@@ -8,10 +8,21 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.hero-gradient{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #7c3aed, #f100b3, #ff0771, #ff7237, #ffb200);
+}
+
 @layer components{
 
     .container{
         @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
+    }
+
+    .hero-gradient{
+        @apply bg-gradient-to-r from-[#7c3aed] to-[#ffb200]
     }
 
     .form-control{
@@ -25,8 +36,8 @@ body {
     }
 
     .button-secondary{
-        @apply border-2 border-secondary  text-black dark:text-white rounded-full px-6 py-2 hover:scale-110
-        hover:text-black transition-all duration-500 
+        @apply border-2 border-secondary text-black dark:text-white rounded-full px-6 py-2
+        hover:text-slate-800 transition-all duration-500 
     } 
 
     .text-gradient{

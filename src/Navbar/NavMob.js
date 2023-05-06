@@ -11,7 +11,7 @@ const NavMob = ({ open, onClose, darkmode }) => {
         dark:text-white after:bg-slate-50 lg:hidden
         ${open ? "translate-x-0" : "-translate-x-96"
             }`} >
-            <div className='flex items-center h-20 px-6'>
+            <div className='flex items-center h-20 pl-4 md:pl-6'>
                 <a href="/" className="cursor-pointer">
                     <img
                         className="none h-8 hover:opacity-80 transition-opacity duration-300 "
