@@ -1,5 +1,5 @@
 import React from "react";
-import myAvatar from "../assets/Images/my-avatar.jpeg";
+import myAvatar from "../assets/Images/my-avatar-1.jpg";
 import { socialIcons } from '../data/data'
 import { FiDownload } from 'react-icons/fi'
 import TypedText from "./TypedText";
@@ -16,7 +16,7 @@ const Hero = () => {
 
                         {/* Hero Contents */}
                         <motion.div className="flex-1 lg:text-left"
-                            initial={{ x: '-100vw', opacity: 0 }}
+                            initial={{ x: '-50vw', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{
                                 type: 'spring', duration: 1, bounce: 0.2,
@@ -36,14 +36,15 @@ const Hero = () => {
                             <div className="flex justify-center gap-4 lg:justify-start my-0 lg:my-10">
                                 <button className='button-primary'>Hire Me</button>
                                 <button className='button-secondary p-0 pl-4 flex items-center gap-2'>Resume
-                                    <div className="bg-primarylight hover:opacity-60 transition-all duration-300 text-slate-800 w-10 h-10 rounded-full flex justify-center items-center">
-                                        <FiDownload className="w-5 h-5 animate-bounce" />
+                                    <div className="bg-secondary overflow-hidden text-slate-800 w-10 h-10 rounded-full flex justify-center items-center 
+                                    hover:bg-primary hover:text-white transition-all duration-500">
+                                        <FiDownload className="w-5 h-5 " />
                                     </div>
                                 </button>
                             </div>
 
                             {/* Social Media Icons */}
-                            <div className="flex items-center justify-center lg:justify-start gap-10 mt-5 ">
+                            <div className="flex items-center justify-center lg:justify-start gap-10 mt-5">
                                 {
                                     socialIcons.map(({ link, icon: Icon }, index) => {
                                         return <div key={index} className="">
@@ -56,8 +57,8 @@ const Hero = () => {
 
                         {/* Hero Image */}
                         <motion.div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-2xl"
-                            initial={{ x: '100vw' }}
-                            animate={{ x: 0 }}
+                            initial={{ x: '50vw', opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
                             transition={{
                                 type: 'spring', delay: 0.5, duration: 1, bounce: 0.2
                             }}>
