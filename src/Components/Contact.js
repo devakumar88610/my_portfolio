@@ -55,12 +55,14 @@ const Contact = () => {
     return (
         <section id="contact" className="bg-primary/10 dark:bg-primary500 py-5 lg:py-10 ">
             <div className="container">
-                <div className="grid grid-cols-2 max-lg:grid-cols-none gap-8">
-                    <form onSubmit={handleSubmit} className="text-white">
-                        {/* <div className="mb-5">
-                            <h1 className="font-medium text-2xl text-white mb-1">Contact me</h1>
-                            <div className="w-10 h-[2px] bg-secondary rounded-full" />
-                        </div> */}
+
+                {/* <div className="flex flex-col items-center mb-10">
+                    <h1 className="font-medium text-4xl tracking-widest uppercase text-slate-800 dark:text-white mb-2">Contact me</h1>
+                    <div className="w-40 h-[2px] bg-secondary rounded-full" />
+                </div> */}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <form onSubmit={handleSubmit}>
                         {/* {JSON.stringify(formData)} */}
                         <div className="mb-6">
                             <input
@@ -102,12 +104,6 @@ const Contact = () => {
                                 <span className="text-secondary px-4">
                                     {errors.message}</span>}
                         </div>
-                        {/* <div className="flex mb-6">
-                            <label className="flex ursor-pointer ">
-                                <input className="mr-2 accent-secondary" type="checkbox" />
-                                Accept Terms & Conditions
-                            </label>
-                        </div> */}
                         <button
                             className="button-primary w-full"
                             type="submit"
@@ -117,7 +113,6 @@ const Contact = () => {
                     </form>
 
                     <div className="shadow-lg">
-
                         <iFrame
                             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.7618137500453!2d77.65094110412194!3d13.032662789634372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17348fe7416b%3A0x1a6c4867314e02db!2sSt.Vincent%20Pallotti%20School!5e0!3m2!1sen!2sin!4v1666607925529!5m2!1sen!2sin'
                             className='rounded-xl h-[300px] lg:h-full w-full border-none'

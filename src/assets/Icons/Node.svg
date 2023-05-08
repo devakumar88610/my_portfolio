@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #3f873f;
+      }
+
+      .cls-4 {
+        fill: #3b8739;
+      }
+
+      .cls-5 {
+        fill: #639d57;
+      }
+
+      .cls-6 {
+        fill: #6da75d;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="55.57" y1="86.06" x2="197.03" y2="165.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6abf4b"/>
+      <stop offset="1" stop-color="#3f873f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="67.37" y1="87.09" x2="71.56" y2="149.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f8f3b"/>
+      <stop offset="1" stop-color="#3da92e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="124.16" y1="86.69" x2="203.01" y2="89.57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4c9842"/>
+      <stop offset="1" stop-color="#53a144"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-2" cx="125" cy="125" r="125"/>
+      <g>
+        <polygon class="cls-3" points="189.95 87.5 189.95 162.5 125 200 60.05 162.5 82.34 126.13 60.05 87.5 124.97 199.97 189.92 162.47 168.28 124.99 189.92 87.5 125 50.03 189.95 87.5"/>
+        <polygon class="cls-4" points="125 50.03 147.64 89.26 124.99 50.03 125 50.03"/>
+        <polygon class="cls-4" points="168.28 124.99 168.27 125 147.64 89.26 168.28 124.99"/>
+        <polygon class="cls-8" points="189.92 162.47 124.97 199.97 60.05 87.5 124.99 50.03 147.64 89.26 168.27 125 168.28 124.99 189.92 162.47"/>
+        <polygon class="cls-6" points="124.97 50 124.99 50.03 60.05 87.5 124.97 50"/>
+        <polygon class="cls-6" points="168.28 124.99 168.27 125 147.64 89.26 168.28 124.99"/>
+        <polygon class="cls-1" points="82.34 126.13 60.05 162.5 60.05 87.5 82.34 126.13"/>
+        <polygon class="cls-7" points="189.92 87.5 168.28 124.99 147.64 89.26 125 50.03 189.92 87.5"/>
+        <polygon class="cls-5" points="168.28 124.99 168.27 125 147.64 89.26 168.28 124.99"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,5 @@
 import { AiFillInstagram, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import Photoshop from '../assets/Icons/Photoshop.svg'
 
 const navLinks = [
     {
@@ -44,27 +45,66 @@ const socialIcons = [
 
 // slick slider images
 
-const slickImages = [
+const skillsIconGraphic = [
     {
-        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-        alt: "Image 1",
+        name: "Photoshop",
+        icon: "../assets/Icons/Photoshop.svg",
     },
     {
-        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-        alt: "Image 2",
+        name: "Illustrator",
+        icon: "../assets/Icons/Illustrator.svg",
     },
     {
-        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-        alt: "Image 3",
+        name: "InDesign",
+        icon: "../assets/Icons/InDesign.svg",
     },
     {
-        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-        alt: "Image 3",
+        name: "After Effects",
+        icon: "../assets/Icons/AfterEffects.svg",
     },
     {
-        url: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-        alt: "Image 3",
+        name: "Xd",
+        icon: "../assets/Icons/Xd.svg",
+    },
+    {
+        name: "Figma",
+        icon: "../assets/Icons/Figma.svg",
     },
 ];
 
-export { navLinks, socialIcons, slickImages }
+const skillsIconDeveloper = [
+    {
+        name: "HTML",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "CSS",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "Javascript",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "React",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "Bootstrap",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "Tailwind",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "Node JS",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+    {
+        name: "Python",
+        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
+    },
+];
+
+export { navLinks, socialIcons, skillsIconGraphic, skillsIconDeveloper }

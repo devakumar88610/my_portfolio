@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.hero-gradient{
+.gradient-one{
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -19,10 +19,6 @@ body {
 
     .container{
         @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
-    }
-
-    .hero-gradient{
-        @apply bg-gradient-to-r from-[#7c3aed] to-[#ffb200]
     }
 
     .form-control{
