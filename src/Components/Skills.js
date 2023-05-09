@@ -58,19 +58,18 @@ const Skills = () => {
                         bg-gradient-to-l from-primarylight to-primarylight/0
                         dark:from-primarydark dark:to-primarydark/0 z-50' />
                     </div>
-                    <div>
-                    </div>
-                </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                    <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
+                    {/* Skills Card */}
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                        <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
 
-                    </div>
-                    <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
+                        </div>
+                        <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
 
-                    </div>
-                    <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
+                        </div>
+                        <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
 
+                        </div>
                     </div>
                 </div>
             </div>
