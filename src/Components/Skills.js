@@ -1,5 +1,4 @@
 import React from 'react'
-import { skillsIconGraphic } from '../data/data'
 
 // Graphic Skills Import
 import Photoshop from "../assets/Icons/Photoshop.svg"

@@ -1,5 +1,4 @@
 import { AiFillInstagram, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
-import Photoshop from '../assets/Icons/Photoshop.svg'
 
 // Navbar Links
 
@@ -45,4 +44,4 @@ const socialIcons = [
     },
 ];
 
-export { navLinks, socialIcons, skillsIconGraphic, skillsIconDeveloper }
+export { navLinks, socialIcons }
