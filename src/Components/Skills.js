@@ -26,12 +26,11 @@ const Skills = () => {
     const settings = {
         dots: false,
         arrows: false,
-        centerMode: true,
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
+        speed: 1000,
         autoplaySpeed: 2000,
         cssEase: "linear",
     };
@@ -50,7 +49,7 @@ const Skills = () => {
                             {
                                 skillsIcons.map((Icons, index) => (
                                     <div key={index} className='flex items-center transition-all duration-500'>
-                                        <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px]' />
+                                        <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] mx-auto' />
                                     </div>
                                 ))
                             }
