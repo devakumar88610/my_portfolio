@@ -15,6 +15,7 @@ body {
     background-image: linear-gradient(to right bottom, #7c3aed, #f100b3, #ff0771, #ff7237, #ffb200);
 }
 
+
 @layer components{
 
     .container{

@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from "react-slick";
 
 // Graphic Skills Import
 import Photoshop from "../assets/Icons/Photoshop.svg"
@@ -17,42 +18,52 @@ import Tailwind from '../assets/Icons/Tailwind.svg'
 import Python from '../assets/Icons/Python.svg'
 import Node from '../assets/Icons/Node.svg'
 
-const graphicIcons = [Photoshop, Illustrator, InDesign, AfterEffects, Xd, Figma]
-const developerIcons = [Html, Css, Javascript, Bootstrap, Tailwind, Python, Node]
+const skillsIcons = [Photoshop, Illustrator, InDesign, AfterEffects, Xd, Figma, Html, Css, Javascript, Bootstrap, Tailwind, Python, Node]
 
 
 const Skills = () => {
+
+    const settings = {
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+    };
+
     return (
-        <div id='skills' className='bg-primarylight dark:bg-primarydark py-10'>
+        <div id='skills' className='bg-primarylight dark:bg-primarydark lg:h-screen py-10'>
             <div className="container" id="skills">
                 <div className='flex flex-col gap-5 md:gap-10'>
 
-                    {/* Skills Graphic Icon list */}
-                    <div className='flex justify-center items-center gap-5 md:gap-[60px] transition-all duration-500'>
-                        {
-                            graphicIcons.map((Icons, index) => (
-                                <div key={index}>
-                                    <img src={Icons} alt="Hello" className='w-[30px] h-[30px] md:w-[50px] md:h-[50px]  ' />
-                                </div>
-                            ))
-                        }
-                    </div>
-
-                    {/* Skills Developer Icon List */}
-                    <div className='flex justify-center items-center gap-5 md:gap-[60px] transition-all duration-500'>
-                        {
-                            developerIcons.map((Icons, index) => (
-                                <div key={index}>
-                                    <img src={Icons} alt="Hello" className='w-[30px] h-[30px] md:w-[50px] md:h-[50px]  ' />
-                                </div>
-                            ))
-                        }
+                    {/* Skills Icon list */}
+                    <div className='relative '>
+                        <div className='absolute top-0 left-0 w-[100px] h-full 
+                        bg-gradient-to-r from-primarylight to-primarylight/0
+                        dark:from-primarydark dark:to-primarydark/0 z-50' />
+                        <Slider {...settings}>
+                            {
+                                skillsIcons.map((Icons, index) => (
+                                    <div key={index} className='flex items-center transition-all duration-500'>
+                                        <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px]' />
+                                    </div>
+                                ))
+                            }
+                        </Slider>
+                        <div className='absolute top-0 right-0 w-[100px] h-full 
+                        bg-gradient-to-l from-primarylight to-primarylight/0
+                        dark:from-primarydark dark:to-primarydark/0 z-50' />
                     </div>
                     <div>
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
 
                     </div>

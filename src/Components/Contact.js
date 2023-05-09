@@ -64,7 +64,7 @@ const Contact = () => {
                 {/* Submit Form */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <form onSubmit={handleSubmit}>
-                        {JSON.stringify(formData)}
+                        {/* {JSON.stringify(formData)} */}
                         <div className="mb-6">
                             <input
                                 className="form-control"
