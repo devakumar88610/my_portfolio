@@ -36,6 +36,7 @@ const Hero = () => {
                             projects for my clients.
                         </p>
 
+                        {/* Hero Buttons */}
                         <div className="flex justify-center gap-4 lg:justify-start my-0 lg:my-10">
                             <button className='button-primary'>Hire Me</button>
                             <button className='button-secondary p-0 pl-4 flex items-center gap-2'>Resume

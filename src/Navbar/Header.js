@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavLink from "./NavLink";
 import NavMob from "./NavMob";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
@@ -12,6 +12,13 @@ const Header = () => {
 
     const [darkmode, setDarkmode] = useState(false);
     const [open, setOpen] = useState(false)
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            return window.scrollY > 50 ? setScroll(true) : setScroll(false)
+        })
+    })
 
     const openMobileNav = () => {
         setOpen(true)
@@ -23,7 +30,8 @@ const Header = () => {
     return (
         <div>
             <nav
-                className="bg-primarylight/80 dark:bg-primary500/80 fixed top-0 left-0 shadow-lg border-primary300 w-full backdrop-blur-md z-[100]">
+                className={`bg-primarylight/80 dark:bg-primary500/80 fixed top-0 left-0 shadow-lg border-primary300 w-full backdrop-blur-md z-[100] transition-all duration-300
+                ${scroll ? "-translate-y-20" : "translate-x-0"}`}>
                 <div className="container">
                     <div className=" flex h-20 items-center justify-between select-none">
                         <a href="/" className="cursor-pointer">

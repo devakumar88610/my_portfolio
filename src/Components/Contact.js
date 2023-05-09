@@ -61,9 +61,10 @@ const Contact = () => {
                     <div className="w-40 h-[2px] bg-secondary rounded-full" />
                 </div> */}
 
+                {/* Submit Form */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <form onSubmit={handleSubmit}>
-                        {/* {JSON.stringify(formData)} */}
+                        {JSON.stringify(formData)}
                         <div className="mb-6">
                             <input
                                 className="form-control"
@@ -112,11 +113,11 @@ const Contact = () => {
                         </button>
                     </form>
 
+                    {/* Map Location */}
                     <div className="shadow-lg">
-                        <iFrame
+                        <iframe
                             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.7618137500453!2d77.65094110412194!3d13.032662789634372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17348fe7416b%3A0x1a6c4867314e02db!2sSt.Vincent%20Pallotti%20School!5e0!3m2!1sen!2sin!4v1666607925529!5m2!1sen!2sin'
                             className='rounded-xl h-[300px] lg:h-full w-full border-none'
-                            allowFullScreen=''
                             loading='lazy'
                             referrerPolicy='no-referrer-when-downgrade'
                         />

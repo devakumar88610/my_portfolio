@@ -27,20 +27,24 @@ const Skills = () => {
         <div id='skills' className='bg-primarylight dark:bg-primarydark py-10'>
             <div className="container" id="skills">
                 <div className='flex flex-col gap-5 md:gap-10'>
+
+                    {/* Skills Graphic Icon list */}
                     <div className='flex justify-center items-center gap-5 md:gap-[60px] transition-all duration-500'>
                         {
                             graphicIcons.map((Icons, index) => (
                                 <div key={index}>
-                                    <img src={Icons} alt="Hello" className='w-10 h-10 md:w-[50px] md:h-[50px] rounded-full shadow-md  ' />
+                                    <img src={Icons} alt="Hello" className='w-[30px] h-[30px] md:w-[50px] md:h-[50px]  ' />
                                 </div>
                             ))
                         }
                     </div>
+
+                    {/* Skills Developer Icon List */}
                     <div className='flex justify-center items-center gap-5 md:gap-[60px] transition-all duration-500'>
                         {
                             developerIcons.map((Icons, index) => (
                                 <div key={index}>
-                                    <img src={Icons} alt="Hello" className='w-10 h-10 md:w-[50px] md:h-[50px] rounded-full shadow-md  ' />
+                                    <img src={Icons} alt="Hello" className='w-[30px] h-[30px] md:w-[50px] md:h-[50px]  ' />
                                 </div>
                             ))
                         }
@@ -59,7 +63,6 @@ const Skills = () => {
                     <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
 
                     </div>
-
                 </div>
             </div>
         </div>

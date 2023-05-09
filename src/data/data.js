@@ -1,6 +1,8 @@
 import { AiFillInstagram, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 import Photoshop from '../assets/Icons/Photoshop.svg'
 
+// Navbar Links
+
 const navLinks = [
     {
         name: 'Home', path: "#",
@@ -40,70 +42,6 @@ const socialIcons = [
     {
         link: "https://github.com/devakumar88610",
         icon: AiOutlineGithub
-    },
-];
-
-// slick slider images
-
-const skillsIconGraphic = [
-    {
-        name: "Photoshop",
-        icon: "../assets/Icons/Photoshop.svg",
-    },
-    {
-        name: "Illustrator",
-        icon: "../assets/Icons/Illustrator.svg",
-    },
-    {
-        name: "InDesign",
-        icon: "../assets/Icons/InDesign.svg",
-    },
-    {
-        name: "After Effects",
-        icon: "../assets/Icons/AfterEffects.svg",
-    },
-    {
-        name: "Xd",
-        icon: "../assets/Icons/Xd.svg",
-    },
-    {
-        name: "Figma",
-        icon: "../assets/Icons/Figma.svg",
-    },
-];
-
-const skillsIconDeveloper = [
-    {
-        name: "HTML",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "CSS",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "Javascript",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "React",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "Bootstrap",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "Tailwind",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "Node JS",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
-    },
-    {
-        name: "Python",
-        icon: "https://cdn.dribbble.com/userupload/3158902/file/original-7c71bfa677e61dea61bc2acd59158d32.jpg?resize=400x0",
     },
 ];
 
