@@ -1,9 +1,9 @@
-import Contact from './Components/Contact';
-import Header from './Navbar/Header';
-import Hero from './Components/Hero';
 import { BrowserRouter } from "react-router-dom"
+import Header from './Navbar/Header';
+import Hero from './Pages/Hero';
+import Skills from './Pages/Skills';
+import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
-import Skills from './Components/Skills';
 import Dummy from './Components/dummy'
 import ScrollToTop from './Components/ScrollToTop';
 import ImageSlick from './Components/ImageSlick';

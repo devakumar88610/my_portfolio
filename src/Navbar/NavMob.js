@@ -23,12 +23,10 @@ const NavMob = ({ open, onClose, darkmode }) => {
                 </div>
                 <div className='px-4 md:px-6'>
                     {
-                        navLinks.map(({ path, name, icon }, index) => {
+                        navLinks.map(({ path, name, icon: Icon }, index) => {
                             return <Link smooth key={index} to={path} className='mx-auto'>
                                 <div className='flex items-center gap-5 py-5'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                        <path d={icon} />
-                                    </svg>
+                                    <Icon className='w-6 h-6' />
                                     <p>{name}</p>
                                 </div>
                             </Link>

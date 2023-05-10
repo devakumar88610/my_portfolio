@@ -53,7 +53,7 @@ const Contact = () => {
         }
     };
     return (
-        <section id="contact" className="bg-primary/10 dark:bg-primary500 py-5 lg:py-10 ">
+        <section id="contact" className="bg-primary/10 dark:bg-primary500 py-10 ">
             <div className="container">
 
                 {/* <div className="flex flex-col items-center mb-10">
@@ -96,7 +96,7 @@ const Contact = () => {
                                 className="form-control rounded-xl"
                                 type="text"
                                 name="message"
-                                rows="4"
+                                rows="5"
                                 placeholder="Message"
                                 onChange={handleChange}
                                 value={formData.message}

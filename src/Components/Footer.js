@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <div className='bg-primarylight dark:bg-primarydark'>
             <div className='py-5 flex justify-center items-center select-none'>
-                <h1 className='text-slate-800 dark:text-white/50'>Designed by&nbsp;
-                    <Link smooth to='#/' className='text-primary hover:text-secondary transition-all text-sm md:text-base'>
+                <h1 className='text-slate-800 dark:text-white/50 text-sm md:text-base'>Designed by&nbsp;
+                    <Link smooth to='#' className='text-primary hover:text-secondary transition-all '>
                         Dev Kumar</Link> &copy; copyrights 2023</h1>
             </div>
         </div>

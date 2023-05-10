@@ -36,7 +36,7 @@ const Skills = () => {
     };
 
     return (
-        <div id='skills' className='bg-primarylight dark:bg-primarydark lg:h-screen py-10'>
+        <div id='skills' className='bg-primarylight dark:bg-primarydark py-10'>
             <div className="container" id="skills">
                 <div className='flex flex-col gap-5 md:gap-10'>
 
@@ -49,7 +49,8 @@ const Skills = () => {
                             {
                                 skillsIcons.map((Icons, index) => (
                                     <div key={index} className='flex items-center transition-all duration-500'>
-                                        <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] mx-auto' />
+                                        <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] mx-auto 
+                                        hover:opacity-50 transition-all duration-500 cursor-pointer' />
                                     </div>
                                 ))
                             }
@@ -61,14 +62,16 @@ const Skills = () => {
 
                     {/* Skills Card */}
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                        <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
-
+                        <div className='bg-white w-full h-full rounded-2xl shadow-lg pt-10 pb-5 flex flex-col justify-between items-center gap-5 '>
+                            <img src={Figma} alt="" />
+                            <p className='text-2xl font-semibold text-slate-800'>Graphic Design</p>
+                            <button>Read more</button>
                         </div>
-                        <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
-
+                        <div className='bg-primary hover:bg-secondary w-full h-full rounded-2xl shadow-lg p-10'>
+                            Web Design
                         </div>
-                        <div className='bg-white w-full h-80 rounded-2xl shadow-lg'>
-
+                        <div className='bg-white w-full h-full rounded-2xl shadow-lg p-10'>
+                            UI/UX Design
                         </div>
                     </div>
                 </div>

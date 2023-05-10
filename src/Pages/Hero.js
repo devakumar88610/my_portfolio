@@ -2,7 +2,7 @@ import React from "react";
 import myAvatar from "../assets/Images/my-avatar-1.jpg";
 import { socialIcons } from '../data/data'
 import { FiDownload } from 'react-icons/fi'
-import TypedText from "./TypedText";
+import TypedText from "../Components/TypedText";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -60,7 +60,7 @@ const Hero = () => {
                     </motion.div>
 
                     {/* Hero Image */}
-                    <motion.div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-xl"
+                    <motion.div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-lg"
                         initial={{ x: '50vw', opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{
