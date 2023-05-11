@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NavLink from "./NavLink";
 import NavMob from "./NavMob";
-import { RiMoonFill, RiSunFill } from "react-icons/ri";
-import { AiOutlineMenu } from "react-icons/ai"
+import { HiBars3, HiSun, HiMoon } from "react-icons/hi2"
 
 // Logo import
 import Logo from "../assets/Images/Logo-white.svg";
@@ -58,13 +57,13 @@ const Header = () => {
                                 }}
                             >
                                 {darkmode ? (
-                                    <RiSunFill className="h-6 w-6 dark:text-white" />
+                                    <HiSun className="h-6 w-6 dark:text-white" />
                                 ) : (
-                                    <RiMoonFill className="h-6 w-6 text-primarydark" />
+                                    <HiMoon className="h-6 w-6 text-primarydark" />
                                 )}
                             </div>
                             <div >
-                                <AiOutlineMenu onClick={openMobileNav} className="h-6 w-6 ml-5 text-slate-600 dark:text-white cursor-pointer block lg:hidden" />
+                                <HiBars3 onClick={openMobileNav} className="h-6 w-6 ml-5 text-slate-600 dark:text-white cursor-pointer block lg:hidden" />
                             </div>
 
                         </div>

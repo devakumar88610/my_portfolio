@@ -1,7 +1,7 @@
 import React from 'react'
 import { navLinks } from '../data/data'
 import { HashLink as Link } from 'react-router-hash-link'
-import { AiFillLeftCircle } from 'react-icons/ai'
+import { HiOutlineXMark } from 'react-icons/hi2'
 import Logo from "../assets/Images/Logo-white.svg"
 import Logo2 from "../assets/Images/Logo-color.svg"
 
@@ -33,7 +33,9 @@ const NavMob = ({ open, onClose, darkmode }) => {
                         })
                     }
                 </div>
-                <AiFillLeftCircle onClick={onClose} className='absolute -right-3.5 text-primary top-7 w-7 h-7 cursor-pointer' />
+                <div className='absolute -right-3.5 top-7 flex justify-center items-center w-6 h-6 rounded-full bg-red-500'>
+                    <HiOutlineXMark onClick={onClose} className=' text-white w-5 h-5 cursor-pointer' />
+                </div>
             </nav>
         </div>
     )

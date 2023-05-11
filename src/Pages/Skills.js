@@ -67,7 +67,7 @@ const Skills = () => {
                             <p className='text-2xl font-semibold text-slate-800'>Graphic Design</p>
                             <button>Read more</button>
                         </div>
-                        <div className='bg-primary hover:bg-secondary w-full h-full rounded-2xl shadow-lg p-10'>
+                        <div className='bg-white w-full h-full rounded-2xl shadow-lg p-10'>
                             Web Design
                         </div>
                         <div className='bg-white w-full h-full rounded-2xl shadow-lg p-10'>
