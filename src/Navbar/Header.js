@@ -73,7 +73,7 @@ const Header = () => {
             </nav>
             <div className="flex justify-center items-center">
                 {
-                    setOpen && <NavMob open={open} onClose={closeMobileNav} />
+                    setOpen && <NavMob open={open} onClose={closeMobileNav} darkmode={darkmode} />
                 }
             </div>
             <ScrollToTop />

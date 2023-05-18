@@ -5,7 +5,7 @@ import { HiOutlineXMark } from 'react-icons/hi2'
 import Logo from "../assets/Images/Logo-white.svg"
 import Logo2 from "../assets/Images/Logo-color.svg"
 
-const NavMob = ({ open, onClose }) => {
+const NavMob = ({ open, onClose, darkmode }) => {
 
     const handleClose = (e) => {
         if (e.target.id === 'wrapper') onClose();
@@ -21,7 +21,7 @@ const NavMob = ({ open, onClose }) => {
                     <a href="/" className="cursor-pointer">
                         <img
                             className="none h-8 hover:opacity-80 transition-opacity duration-300 "
-                            src={open ? Logo : Logo2}
+                            src={darkmode ? Logo : Logo2}
                             alt="Dev Kumar"
                         />
                     </a>
