@@ -53,7 +53,7 @@ const Contact = () => {
         }
     };
     return (
-        <section id="contact" className="bg-primary/10 dark:bg-primary500 py-10 ">
+        <section id="contact" className="bg-primary-100/20 dark:bg-primary-500 py-10">
             <div className="container">
 
                 {/* <div className="flex flex-col items-center mb-10">
