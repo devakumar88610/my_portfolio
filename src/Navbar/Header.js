@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NavLink from "./NavLink";
 import NavMob from "./NavMob";
+import ScrollToTop from "../Components/ScrollToTop";
 import { HiBars3, HiSun, HiMoon } from "react-icons/hi2"
 
 // Logo import
@@ -75,6 +76,7 @@ const Header = () => {
                     setOpen && <NavMob open={open} onClose={closeMobileNav} />
                 }
             </div>
+            <ScrollToTop />
         </div>
     );
 };

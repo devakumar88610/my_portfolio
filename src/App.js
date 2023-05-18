@@ -19,7 +19,6 @@ function App() {
         <Contact />
         <Footer />
         {/* <ImageSlick /> */}
-        <ScrollToTop />
       </BrowserRouter>
     </div>
     // <div className='bg-dark'>

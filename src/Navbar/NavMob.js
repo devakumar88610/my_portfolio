@@ -5,19 +5,23 @@ import { HiOutlineXMark } from 'react-icons/hi2'
 import Logo from "../assets/Images/Logo-white.svg"
 import Logo2 from "../assets/Images/Logo-color.svg"
 
-const NavMob = ({ open, onClose, darkmode }) => {
+const NavMob = ({ open, onClose }) => {
+
+    const handleClose = (e) => {
+        if (e.target.id === 'wrapper') onClose();
+    }
 
     return (
-        <div className=''>
-            <nav className={`fixed left-0 top-0 flex flex-col h-screen w-[60%] md:w-[30%] z-[110] shadow-lg transition-all bg-primarylight dark:bg-primarydark 
-        dark:text-white lg:hidden
+        <div id='wrapper' onClick={handleClose} className={`fixed top-0 left-0 w-full h-screen lg:hidden z-[110] backdrop-blur-md transition-all
         ${open ? "translate-x-0" : "-translate-x-[120%]"
-                }`} >
+            }`}>
+            <nav className='fixed left-0 top-0 flex flex-col h-screen w-[60%] md:w-[30%] shadow-lg transition-all bg-primarylight dark:bg-primarydark 
+        dark:text-white'>
                 <div className='flex items-center h-20 pl-4 md:pl-6'>
                     <a href="/" className="cursor-pointer">
                         <img
                             className="none h-8 hover:opacity-80 transition-opacity duration-300 "
-                            src={darkmode ? Logo : Logo2}
+                            src={open ? Logo : Logo2}
                             alt="Dev Kumar"
                         />
                     </a>
@@ -34,10 +38,11 @@ const NavMob = ({ open, onClose, darkmode }) => {
                         })
                     }
                 </div>
-                <div className='absolute right-7 top-7 flex justify-center items-center w-6 h-6 rounded-full bg-red-500'>
-                    <HiOutlineXMark onClick={onClose} className=' text-white w-5 h-5 cursor-pointer' />
-                </div>
+
             </nav>
+            <div className='absolute right-7 top-7 flex justify-center items-center w-6 h-6 rounded-full bg-red-500'>
+                <HiOutlineXMark onClick={onClose} className=' text-white w-5 h-5 cursor-pointer' />
+            </div>
         </div>
     )
 }
