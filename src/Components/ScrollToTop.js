@@ -12,7 +12,7 @@ const ScrollToTop = () => {
         })
     })
     return (
-        <div className={` ${scroll ? "block" : "hidden"} fixed bottom-5 right-5 z-[1000] transition-all`}>
+        <div className={` ${scroll ? "translate-y-0" : "translate-y-[150%]"} fixed bottom-5 right-5 z-[1000] transition-all`}>
             <Link smooth to='#' className='bg-primary dark:bg-white h-10 w-10 rounded-full flex items-center justify-center shadow-lg'>
                 <HiOutlineChevronUp className='w-6 h-6 text-white dark:text-slate-800' />
             </Link>

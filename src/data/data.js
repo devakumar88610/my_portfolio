@@ -9,13 +9,13 @@ const navLinks = [
         icon: HiOutlineHome
     },
     {
+        name: 'About', path: "#about",
+        icon: HiOutlineUser
+    },
+    {
         name: 'Skills', path: "#skills",
         icon: HiOutlineCodeBracket
 
-    },
-    {
-        name: 'About', path: "#about",
-        icon: HiOutlineUser
     },
     {
         name: 'Portfolio', path: "#portfolio",

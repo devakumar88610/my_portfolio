@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import myAvatar from "../assets/Images/my-avatar-1.jpg";
 import { socialIcons } from '../data/data'
 import { FiDownload } from 'react-icons/fi'

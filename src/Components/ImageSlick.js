@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -10,34 +10,41 @@ import AfterEffects from "../assets/Icons/AfterEffects.svg"
 import Xd from "../assets/Icons/Xd.svg"
 import Figma from "../assets/Icons/Figma.svg"
 
+// Developer Skills import
+import Html from '../assets/Icons/Html.svg'
+import Css from '../assets/Icons/Css.svg'
+import Javascript from '../assets/Icons/Javascript.svg'
+import Bootstrap from '../assets/Icons/Bootstrap.svg'
+import Tailwind from '../assets/Icons/Tailwind.svg'
+import Python from '../assets/Icons/Python.svg'
+import Node from '../assets/Icons/Node.svg'
 
-const slickImages = [Photoshop, Illustrator, InDesign, AfterEffects, Xd, Figma]
-
+const skillsIcons = [Photoshop, Illustrator, InDesign, AfterEffects, Xd, Figma, Html, Css, Javascript, Bootstrap, Tailwind, Python, Node]
 
 const ImageSlick = () => {
 
-
     const settings = {
-        dots: true,
+        dots: false,
+        arrows: false,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
+        speed: 1000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
     };
 
     return (
-        <div className="container mb-6">
-            <h1 className="mr-4 text-white">Technical Skills</h1>
+        <div>
             <Slider {...settings}>
                 {
-                    slickImages.map((image, index) => {
-                        return <div key={index} className="bg-white flex  ">
-                            <img className="bg-transparent" src={image} alt={image.alt} />
+                    skillsIcons.map((Icons, index) => (
+                        <div key={index} className='flex items-center transition-all duration-500'>
+                            <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] mx-auto 
+                                        hover:opacity-50 transition-all duration-500 cursor-pointer' />
                         </div>
-                    })
+                    ))
                 }
             </Slider>
         </div>
