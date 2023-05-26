@@ -21,7 +21,7 @@ const TypedText = () => {
     }, []);
     return (
         <div>
-            <h1 className='text-3xl lg:text-5xl font-bold py-3'><span ref={typedTextRef}></span></h1>
+            <h1 className='text-3xl lg:text-5xl font-bold py-3 text-gradient'><span ref={typedTextRef}></span></h1>
         </div>
     );
 }

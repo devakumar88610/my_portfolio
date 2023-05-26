@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import myAvatar from "../assets/Images/my-avatar-1.jpg";
 import { socialIcons } from '../data/data'
 import { FiDownload } from 'react-icons/fi'
@@ -26,7 +26,7 @@ const Hero = () => {
                         <h6 className='text-slate-800/50 dark:text-white/50 font-medium text-lg lg:text-2xl'>
                             Hello, I'm Dev Kumar
                         </h6>
-                        <div className='text-gradient'>
+                        <div className='-one'>
                             <TypedText />
                         </div>
                         <p className='text-slate-800 dark:text-white mb-5 max-w-4xl text-sm lg:text-base '>
@@ -40,8 +40,8 @@ const Hero = () => {
                         <div className="flex justify-center gap-4 lg:justify-start my-0 lg:my-10">
                             <button className='button-primary'>Hire Me</button>
                             <button className='button-secondary p-0 pl-4 flex items-center gap-2'>Resume
-                                <div className="bg-secondary text-slate-800 w-10 h-10 rounded-full flex justify-center items-center 
-                                    hover:bg-primary hover:text-white transition-all duration-500">
+                                <div className="bg-primarylight hover:bg-secondary text-slate-800 w-10 h-10 rounded-full flex justify-center items-center 
+                                    border-2 border-secondary transition-all duration-500">
                                     <FiDownload className="w-5 h-5 " />
                                 </div>
                             </button>
