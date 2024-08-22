@@ -31,7 +31,7 @@ const Header = () => {
         <div>
             <nav
                 className={`bg-primarylight/80 dark:bg-[#190835] fixed top-0 left-0 shadow-lg border-primary300 w-full backdrop-blur-md z-[100] transition-all duration-300
-                ${scroll ? "-translate-y-20" : "translate-x-0"}`}>
+                ${scroll ? " " : "-translate-y-0"}`}>
                 <div className="container">
                     <div className=" flex h-20 items-center justify-between select-none">
                         <a href="/" className="cursor-pointer">

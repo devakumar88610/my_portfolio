@@ -38,8 +38,8 @@ const NavMob = ({ open, onClose, darkmode }) => {
                         })
                     }
                 </div>
-
             </nav>
+
             <div className='absolute right-7 top-7 flex justify-center items-center w-6 h-6 rounded-full bg-red-500'>
                 <HiOutlineXMark onClick={onClose} className=' text-white w-5 h-5 cursor-pointer' />
             </div>

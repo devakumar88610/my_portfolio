@@ -2,19 +2,20 @@ import React from "react";
 import myAvatar from "../assets/Images/my-avatar-1.jpg";
 import { socialIcons } from '../data/data'
 import { FiDownload } from 'react-icons/fi'
+import { HiOutlineArrowSmRight } from "react-icons/hi";
+
 import TypedText from "../Components/TypedText";
 import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
-        <div className=" bg-primarylight dark:bg-primarydark pt-20 lg:pt-10 h-full lg:h-screen overflow-hidden">
+        <div className=" dark:bg-primarydark pt-20 lg:pt-10 h-full lg:h-screen overflow-hidden">
 
-            {/* Background Gradient */}
-            <div className='absolute top-0 left-0 w-[30%] h-[30%] rounded-full blur-[300px] bg-primary' />
-            <div className='absolute top-0 right-0 w-[30%] h-[30%] rounded-full blur-[300px] bg-secondary/80' />
+            <div className='absolute top-0 -left-32  w-[30%] h-[30%] rounded-full blur-[250px] dark:bg-primary' />
+            <div className='absolute top-0 -right-32  w-[30%] h-[30%] rounded-full blur-[250px] dark:bg-secondary/80' />
 
             <div className='container' id="/">
-                <div className='flex lg:flex-row flex-col items-center justify-center text-center h-full lg:h-screen gap-10 py-10'>
+                <div className='flex lg:flex-row flex-col-reverse items-center justify-center text-center h-full lg:h-screen gap-10 lg:gap-20'>
 
                     {/* Hero Contents */}
                     <motion.div className="flex-1 lg:text-left"
@@ -38,12 +39,9 @@ const Hero = () => {
 
                         {/* Hero Buttons */}
                         <div className="flex justify-center gap-4 lg:justify-start my-0 lg:my-10">
-                            <button className='button-primary'>Hire Me</button>
-                            <button className='button-secondary p-0 pl-4 flex items-center gap-2'>Resume
-                                <div className="bg-primarylight hover:bg-secondary text-slate-800 w-10 h-10 rounded-full flex justify-center items-center 
-                                    border-2 border-secondary transition-all duration-500">
-                                    <FiDownload className="w-5 h-5 " />
-                                </div>
+                            <button className='button-primary flex items-center gap-2'>Hire Me <HiOutlineArrowSmRight className="w-6 h-6 " /></button>
+                            <button className='button-secondary flex items-center gap-2'>Resume <FiDownload className="w-5 h-5 " />
+
                             </button>
                         </div>
 
@@ -51,8 +49,8 @@ const Hero = () => {
                         <div className="flex items-center justify-center lg:justify-start gap-10 mt-5">
                             {
                                 socialIcons.map(({ link, icon: Icon }, index) => {
-                                    return <div key={index} className="">
-                                        <a href={link} target="_blank" rel="noreferrer"><Icon className="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white h-7 w-7 transition-all duration-500" /></a>
+                                    return <div key={index} className="bg-white/50 dark:bg-primary-500 flex justify-center items-center border border-white/50 backdrop:blur-md w-14 h-14 rounded-2xl">
+                                        <a href={link} target="_blank" rel="noreferrer"><Icon className="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white h-8 w-8 transition-all duration-500" /></a>
                                     </div>
                                 })
                             }
@@ -60,7 +58,7 @@ const Hero = () => {
                     </motion.div>
 
                     {/* Hero Image */}
-                    <motion.div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-lg"
+                    <motion.div className=" flex-1 overflow-hidden rounded-3xl border border-primary/50 shadow-lg "
                         initial={{ x: '50vw', opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{

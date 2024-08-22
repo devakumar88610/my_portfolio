@@ -27,7 +27,7 @@ const ImageSlick = () => {
         dots: false,
         arrows: false,
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
@@ -40,8 +40,8 @@ const ImageSlick = () => {
             <Slider {...settings}>
                 {
                     skillsIcons.map((Icons, index) => (
-                        <div key={index} className='flex items-center transition-all duration-500'>
-                            <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] mx-auto 
+                        <div key={index} className='flex items-center'>
+                            <img src={Icons} alt="Hello" className='w-[40px] h-[40px] md:w-[60px] md:h-[60px] mx-auto 
                                         hover:opacity-50 transition-all duration-500 cursor-pointer' />
                         </div>
                     ))

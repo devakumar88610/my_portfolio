@@ -18,7 +18,7 @@ const Contact = () => {
         let newErrors = {};
 
         // fullname validation
-        if (formData.fullname == 0) {
+        if (formData.fullname < 1) {
             newErrors.fullname = 'Please enter your fullname';
         } else if (!formData.fullname.match(/^[A-Z a-z]*$/)) {
             newErrors.fullname = 'Name must be alphabets'
@@ -34,6 +34,8 @@ const Contact = () => {
         // message validation
         if (formData.message.length == 0) {
             newErrors.message = 'Write message';
+        } else if (formData.message.length < 6) {
+            newErrors.message = 'must be more than 6';
         }
 
         setErrors(newErrors);
@@ -53,7 +55,7 @@ const Contact = () => {
         }
     };
     return (
-        <section id="contact" className="bg-primary-100/20 dark:bg-primary-500 py-10">
+        <section id="contact" className="bg-white/50 dark:bg-primary-500  backdrop:blur-md py-10">
             <div className="container">
 
                 {/* <div className="flex flex-col items-center mb-10">
@@ -75,7 +77,7 @@ const Contact = () => {
                                 value={formData.fullname}
                             />
                             {errors.fullname &&
-                                <span className="text-secondary px-4">
+                                <span className="text-primary px-4">
                                     {errors.fullname}</span>}
                         </div>
                         <div className="mb-6">
@@ -88,7 +90,7 @@ const Contact = () => {
                                 value={formData.email}
                             />
                             {errors.email &&
-                                <span className="text-secondary px-4">
+                                <span className="text-primary px-4">
                                     {errors.email}</span>}
                         </div>
                         <div className="mb-4">
@@ -102,7 +104,7 @@ const Contact = () => {
                                 value={formData.message}
                             />
                             {errors.message &&
-                                <span className="text-secondary px-4">
+                                <span className="text-primary px-4">
                                     {errors.message}</span>}
                         </div>
                         <button
@@ -114,14 +116,27 @@ const Contact = () => {
                     </form>
 
                     {/* Map Location */}
-                    <div className="shadow-lg">
-                        <iframe
-                            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.7618137500453!2d77.65094110412194!3d13.032662789634372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17348fe7416b%3A0x1a6c4867314e02db!2sSt.Vincent%20Pallotti%20School!5e0!3m2!1sen!2sin!4v1666607925529!5m2!1sen!2sin'
-                            className='rounded-xl h-[300px] lg:h-full w-full border-none'
-                            loading='lazy'
-                            referrerPolicy='no-referrer-when-downgrade'
-                        />
+                    <div className="flex flex-col gap-8">
+                        <div className="flex items-center gap-4">
+
+
+                            <div className="dark:text-white">
+                                <h4 className="text-lg font-bold">Contact</h4>
+                                <p>+91 9900760225</p>
+                            </div>
+
+                        </div>
+                        <div className="flex  items-center gap-4">
+
+                            <div className="dark:text-white">
+                                <h4 className="text-lg font-bold">Email</h4>
+                                <p>devakumar88610@gmail.com</p>
+                            </div>
+                        </div>
+
+
                     </div>
+
                 </div>
             </div>
         </section>

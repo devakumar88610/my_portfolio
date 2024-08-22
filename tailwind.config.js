@@ -18,13 +18,17 @@ module.exports = {
         'primary-400': '#3a1672',
         'primary-500': '#240e47',
         'primarydark': '#16092c',
-        'secondary': '#ffb200',
+        'secondary': '#ffd800',
         'primarylight': "#F4F7FE",
       },
 
       shadow: {
         500: "rgba(112, 144, 176, 0.08)",
       },
+
+      backgroundImage: {
+        'hero-pattern': "url('./src/assets/Images/background.jpg')",
+      }
     },
 
   },

@@ -8,7 +8,7 @@ const TypedText = () => {
     useEffect(() => {
         if (typedTextRef.current) {
             const typed = new Typed(typedTextRef.current, {
-                strings: ['UI/UX Developer', 'Web Developer', 'Graphic Designer'],
+                strings: ['Web Developer', 'Graphic Designer', 'Digital Marketer'],
                 typeSpeed: 50,
                 backSpeed: 50,
                 loop: true,
@@ -20,8 +20,8 @@ const TypedText = () => {
         }
     }, []);
     return (
-        <div>
-            <h1 className='text-3xl lg:text-5xl font-bold py-3 text-gradient'><span ref={typedTextRef}></span></h1>
+        <div >
+            <h1 className='text-3xl lg:text-5xl font-semibold py-3 text-primary'><span ref={typedTextRef}></span></h1>
         </div>
     );
 }
